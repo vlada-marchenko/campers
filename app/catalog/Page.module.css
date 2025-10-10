@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  list-style: none;
+  margin: 0;
+    padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 48px;
+  padding-bottom: 52px;
+}

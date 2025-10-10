@@ -1,0 +1,130 @@
+.container {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+.cardContainer {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+}
+
+.mainInfo {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.name {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: #101828;
+margin: 0;
+}
+
+.price {
+margin-top: 16px;
+margin-bottom: 28px;
+}
+
+.textPrice {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: #101828;
+margin: 0;
+}
+
+.info {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 16px;
+}
+
+.infoCont {
+display: flex;
+flex-direction: row;
+align-items: center; 
+gap: 4px;
+}
+
+
+.infoText {
+margin: 0;
+}
+
+.imgContainer {
+display: flex;
+flex-direction: row;
+gap: 46px;
+}
+
+.img {
+border-radius: 10px;
+object-fit: cover; 
+object-position: center;
+}
+
+.description {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #475467;
+margin: 0;
+margin-top: 28px;
+}
+
+.containerInfo {
+margin-top: 60px;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.btnActive,
+.btnInactive {
+  all: unset;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #101828;  
+}
+
+.btnInactive { opacity: 0.6; }
+
+.btnActive { position: relative; }
+
+.btnActive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;                 
+  bottom: -27px;          
+  height: 6px;
+  background: #E44848;    
+  z-index: 1;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #E5E7EB;     
+  margin: 0;
+}

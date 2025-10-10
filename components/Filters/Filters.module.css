@@ -1,0 +1,165 @@
+.container { width: 360px; }
+
+.location { display: grid; gap: 8px; }
+
+.locationText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6C717B;
+}
+
+.input {
+  width: 312px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f7f7f7;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+  padding: 0 12px 0 44px;
+  padding-left: 48px;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: #6C717B;
+}
+
+.icon:focus { fill: #111827; }
+
+.field { position: relative; }
+
+.input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6C717B;
+}
+
+.filterText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.vehicleTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #101828;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.divider {
+  width: 360px;
+  height: 0px;
+  border: 1px solid #DADDE1;
+  margin: 0;
+}
+
+.checkbox,
+.radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.categoryList,
+.vehicleList {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.categoryList { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.vehicleList  { grid-template-columns: repeat(3, 1fr); }
+
+.categoryItem,
+.vehicleItem {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #DADDE1;
+  border-radius: 12px;
+}
+
+.itemContent,
+.radioRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.categoryItem.active,
+.vehicleItem.active {
+  border: 1px solid #E44848;
+}
+
+.itemText,
+.vehicleLabel {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #101828;
+}
+
+.searchBtn {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 166px;
+height: 56px;
+background: #E44848;
+border-radius: 200px;
+border: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.005em;
+color: #FFFFFF;
+}
+
+.searchBtn:hover {
+background: #D84343;
+}
