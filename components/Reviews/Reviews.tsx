@@ -1,7 +1,6 @@
 import { fetchCamperById } from "../../lib/api"
 import { useQuery } from "@tanstack/react-query"
 import css from './Reviews.module.css'
-import Image from "next/image"
 import Icon from "../Icon/Icon"
 
 type Props = {

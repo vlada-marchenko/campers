@@ -2,13 +2,8 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'ftp.goit.study',
-        pathname: '/**',
-      },
+      { protocol: 'https', hostname: 'ftp.goit.study', pathname: '/**' },
     ],
   },
 };
-
 export default nextConfig;
