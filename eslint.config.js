@@ -9,20 +9,25 @@ export default defineConfig([
   globalIgnores(['dist', '.next']),
   {
     files: ['**/*.{ts,tsx}'],
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      ecmaVersion: 2020,
-      sourceType: 'module',
-      project: './tsconfig.json',
-    },
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-    ],
     languageOptions: {
+      parser: tseslint.parser,
+      parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module',
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
       globals: { ...globals.browser, ...globals.node },
+    },
+    plugins: {
+      '@next/next': next,
+    },
+    rules: {
+      ...js.configs.recommended.rules,
+      ...tseslint.configs.recommended.rules,
+      ...reactHooks.configs['recommended-latest'].rules,
+      ...next.configs.recommended.rules,
+      ...next.configs['core-web-vitals'].rules,
     },
   },
 ])

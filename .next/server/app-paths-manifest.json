@@ -1,5 +1,4 @@
 {
-  "/api/campers/route": "app/api/campers/route.js",
   "/catalog/page": "app/catalog/page.js",
   "/catalog/[id]/page": "app/catalog/[id]/page.js",
   "/page": "app/page.js"
