@@ -1,24 +1,13 @@
-import js from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
-import nextPlugin from '@next/eslint-plugin-next';
-import reactHooks from 'eslint-plugin-react-hooks';
+
+import js from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import next from '@next/eslint-plugin-next'
 
 export default [
-  { ignores: ['.next', 'node_modules', 'dist'] },
-
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  nextPlugin.configs['core-web-vitals'],
-
+  next.configs.recommended, 
   {
-    files: ['**/*.{ts,tsx,js,jsx}'],
-    languageOptions: {
-      parser: tseslint.parser,
-      parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-      globals: { ...globals.browser, ...globals.node },
-    },
-    plugins: { 'react-hooks': reactHooks },
-    rules: { ...reactHooks.configs['recommended-latest'].rules },
+    ignores: ['.next/**', 'node_modules/**', 'dist/**'],
   },
-];
+]

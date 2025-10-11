@@ -26,30 +26,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/catalog": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/catalog",
-      "dataRoute": "/catalog.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -73,13 +49,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/catalog": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/catalog",
+      "dataRoute": "/catalog.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "0e3b1e445d0d12077439632183da0c70",
-    "previewModeSigningKey": "46f2a354f523ed80cc2d5e0f3e94fb1e9534bd12783509d6d151a94ddf864c9e",
-    "previewModeEncryptionKey": "19e7914a39b1157730c90753bcfc5a3978ba9e12a81b446b4e7be4f2ac9e6075"
+    "previewModeId": "a9245941494cd393be45c2bb749d86ab",
+    "previewModeSigningKey": "5443e33841896c640c06cea0acf71188eb08a337555d76ff2702cf1523f9baf4",
+    "previewModeEncryptionKey": "b664b97af417c3a36855b697dec41ee514e66db16f3feb4e197673dead2370f4"
   }
 }
