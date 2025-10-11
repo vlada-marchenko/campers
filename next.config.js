@@ -5,6 +5,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'ftp.goit.study', pathname: '/**' },
     ],
   },
+  reactStrictMode: true
 };
 
 export default nextConfig;
