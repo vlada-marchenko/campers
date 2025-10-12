@@ -10,6 +10,7 @@ import { fetchCamperById } from '../../../lib/api';
 import Image from 'next/image';
 import Features from '../../../components/Features/Features';
 import Reviews from '../../../components/Reviews/Reviews';
+import BookForm from 'components/BookForm/BookForm';
 
 type Props = {
     camperId: number
@@ -83,6 +84,7 @@ export default function CamperDetails({ camperId }: Props) {
         {activeTab === "reviews"  && (
         <Reviews camperId={camperId}/>
         )} 
+        <BookForm/>
       </div>
     </div>
         </div>
