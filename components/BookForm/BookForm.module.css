@@ -154,6 +154,10 @@ letter-spacing: -0.005em;
 color: #FFFFFF;
 }
 
+.button:hover {
+background: #D84343;
+}
+
 /*calendar*/
 
 .bookCalendar {
