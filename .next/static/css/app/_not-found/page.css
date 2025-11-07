@@ -68,3 +68,21 @@ text-decoration: none;
 background: #D84343;
 }
 
+
+@media (max-width: 768px) {
+.page_container__jZF7q {
+box-sizing: border-box;
+padding: 0 64px;
+overflow: hidden;
+}
+
+.page_title__po7na {
+line-height: 50px;
+}
+}
+
+@media (max-width: 375px) {
+.page_container__jZF7q {
+padding: 0 32px;
+}
+}

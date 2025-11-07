@@ -64,3 +64,22 @@ text-decoration: none;
 .button:hover {
 background: #D84343;
 }
+
+
+@media (max-width: 768px) {
+.container {
+box-sizing: border-box;
+padding: 0 64px;
+overflow: hidden;
+}
+
+.title {
+line-height: 50px;
+}
+}
+
+@media (max-width: 375px) {
+.container {
+padding: 0 32px;
+}
+}

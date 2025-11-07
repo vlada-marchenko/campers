@@ -221,11 +221,98 @@ border: 1px solid #D84343;
   gap: 64px;
   list-style: none;
   margin: 0;
-    padding-left: 64px;
+  padding-left: 64px;
   padding-right: 64px;
   padding-top: 48px;
   padding-bottom: 52px;
 }
+
+.Page_filtersToggle__KP1S5 {
+  display: none;
+}
+
+.Page_filtersStatic__CzsCN { display: block; }
+
+.Page_filtersOverlay__rLaox { display: none; }
+.Page_backdrop__xNrCW { display: none; }
+.Page_close__WjCZS { display: none; }
+
+
+@media (max-width: 768px) {
+  .Page_container__tj5qz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 30px;
+  }
+
+  .Page_filtersToggle__KP1S5 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  border: 1px solid #DADDE1;
+  background: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-family: 'Inter';
+  font-weight: 500;
+  cursor: pointer;
+  align-self: start;
+  margin-bottom: 12px;}
+
+
+  .Page_filtersStatic__CzsCN { 
+    display: none; 
+  }
+
+  .Page_backdrop__xNrCW {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+
+  .Page_filtersOverlay__rLaox {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 355px;     
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: -12px 0 24px rgba(16, 24, 40, 0.12);
+    padding: 20px 10px;
+    z-index: 101;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .Page_close__WjCZS {
+    display: inline-flex;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .Page_filtersOverlay__rLaox .divider { width: 100%; }
+  .Page_filtersOverlay__rLaox .input { width: 100%; }
+}
+
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./components/Filters/Filters.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
@@ -325,6 +412,7 @@ border: 1px solid #D84343;
   grid-gap: 12px;
   gap: 12px;
   padding: 0;
+  margin: 0;
   margin-top: 24px;
   margin-bottom: 32px;
 }
@@ -396,4 +484,20 @@ color: #FFFFFF;
 
 .Filters_searchBtn__aKEUX:hover {
 background: #D84343;
+}
+
+/* @media (max-width: 768px) {
+.container {
+  display: none;
+}
+} */
+
+@media (max-width: 768px) {
+.Filters_container__C8v4l {
+width: 360px;
+}
+
+.Filters_input__KLVxa {
+width: 287px;
+}
 }
