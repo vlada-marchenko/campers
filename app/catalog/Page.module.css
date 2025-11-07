@@ -48,7 +48,9 @@
   font-weight: 500;
   cursor: pointer;
   align-self: start;
-  margin-bottom: 12px;}
+  margin-bottom: 12px;
+  color: black;
+}
 
 
   .filtersStatic { 
@@ -68,9 +70,11 @@
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 100vw;
     max-width: 355px;     
-    height: 100vh;
+    height: 100dvh;                
+    max-height: 100dvh;           
     background: #ffffff;
     box-shadow: -12px 0 24px rgba(16, 24, 40, 0.12);
     padding: 20px 10px;
@@ -78,6 +82,8 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
+    overflow-y: auto;              
+    overflow-x: hidden; 
   }
 
   .close {
@@ -90,6 +96,7 @@
     font-size: 18px;
     line-height: 1;
     cursor: pointer;
+    color: black;
   }
 
   .filtersOverlay :global(.divider) { width: 100%; }
