@@ -173,20 +173,28 @@ background: #D84343;
 
 @media (max-width: 768px) {
 .container {
-width: 355px;
+width: 325px;
 }
 
 .input {
-width: 287px;
+width: 300px;
+padding-right: 0;
 }
 
 .categoryList,
 .vehicleList {
   display: grid;
-  gap: 10px;
+  gap: 7px;
   padding: 0;
   margin: 0;
   margin-top: 24px;
   margin-bottom: 32px;
 }
+}
+
+.divider {
+  width: 330px;
+  height: 0px;
+  border: 1px solid #DADDE1;
+  margin: 0;
 }

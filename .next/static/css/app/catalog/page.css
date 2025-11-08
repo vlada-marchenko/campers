@@ -289,10 +289,10 @@ border: 1px solid #D84343;
     right: 0;
     bottom: 0;
     width: 100vw;
-    max-width: 355px;           
+    max-width: 360px;           
     background: #ffffff;
     box-shadow: -12px 0 24px rgba(16, 24, 40, 0.12);
-    padding: 20px 10px;
+    padding: 20px 15px;
     z-index: 101;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
@@ -304,7 +304,7 @@ border: 1px solid #D84343;
     display: inline-flex;
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 15px;
     border: none;
     background: transparent;
     font-size: 18px;
@@ -498,21 +498,29 @@ background: #D84343;
 
 @media (max-width: 768px) {
 .Filters_container__C8v4l {
-width: 355px;
+width: 325px;
 }
 
 .Filters_input__KLVxa {
-width: 287px;
+width: 300px;
+padding-right: 0;
 }
 
 .Filters_categoryList__dZsFI,
 .Filters_vehicleList___TjUu {
   display: grid;
-  grid-gap: 10px;
-  gap: 10px;
+  grid-gap: 7px;
+  gap: 7px;
   padding: 0;
   margin: 0;
   margin-top: 24px;
   margin-bottom: 32px;
 }
+}
+
+.Filters_divider__twb2V {
+  width: 330px;
+  height: 0px;
+  border: 1px solid #DADDE1;
+  margin: 0;
 }
