@@ -80,7 +80,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
-    overflow-y: auto;              
+    overflow-y: hidden;              
     overflow-x: hidden; 
   }
 

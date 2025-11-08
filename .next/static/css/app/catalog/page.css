@@ -297,7 +297,7 @@ border: 1px solid #D84343;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
-    overflow-y: auto;              
+    overflow-y: hidden;              
     overflow-x: hidden; 
   }
 
