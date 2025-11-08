@@ -3,12 +3,19 @@ import TanStackProvider from "../components/TanStackProvider/TanStackProvider"
 import './global.css'
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
+import { Viewport } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: 'TravelTrucks | Campers of Your Dreams',
