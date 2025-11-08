@@ -81,7 +81,6 @@
     overscroll-behavior: contain;
     overflow-y: auto;             
     overflow-x: hidden; 
-    height: calc(var(--vh, 1vh) * 100);
   }
 
   .close {

@@ -17,25 +17,13 @@ export default function CatalogPageClient() {
   const [openFilters, setOpenFilters] = useState(false);
 
   useEffect(() => {
-    if (openFilters) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [openFilters]);
-
-  useEffect(() => {
-    const setHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-    setHeight();
-    window.addEventListener("resize", setHeight);
-    return () => window.removeEventListener("resize", setHeight);
-  }, []);
+  if (openFilters) {
+    document.body.style.overflow = "hidden";  
+  } else {
+    document.body.style.overflow = "";        
+  }
+  return () => { document.body.style.overflow = ""; };
+}, [openFilters]);
 
   const {
     city,
@@ -54,8 +42,8 @@ export default function CatalogPageClient() {
     <div className={css.container}>
       <button
         type="button"
-        className={css.filtersToggle}
-        onClick={() => setOpenFilters(true)}
+        className={css.filtersToggle} 
+        onClick={() => setOpenFilters(true)} 
       >
         Filters
       </button>
