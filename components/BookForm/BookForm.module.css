@@ -158,6 +158,21 @@ color: #FFFFFF;
 background: #D84343;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 20px;
+  }
+ 
+  .email,
+  .name,
+  .date,
+  .textarea {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+
 /*calendar*/
 
 .bookCalendar {

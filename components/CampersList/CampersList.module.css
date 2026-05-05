@@ -2,6 +2,8 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+width: 100%;
+min-width: 0;
 }
 
 .list {
@@ -12,6 +14,8 @@ padding: 0px;
 gap: 32px;
 list-style: none;
 margin: 0;
+width: 100%;
+min-width: 0;
 }
 
 .listItem {
@@ -25,8 +29,14 @@ background: #FFFFFF;
 border: 1px solid #DADDE1;
 border-radius: 20px;
 width: 100%;
+min-width: 0;
+overflow: hidden;
 }
 
+.listItem > div {
+  min-width: 0;
+  flex: 1;
+}
 
 .categoryList > li:nth-child(n+8) {
   display: none;
@@ -47,6 +57,7 @@ align-items: start;
 justify-content: space-between;
 height: fit-content;
 margin-bottom: 8px;
+min-width: 0;
 }
 
 .name {
@@ -57,6 +68,10 @@ font-size: 24px;
 line-height: 32px;
 color: #101828;
 margin: 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+min-width: 0;
 }
 
 .price {
@@ -108,6 +123,7 @@ white-space: nowrap;
 overflow: hidden;         
 text-overflow: ellipsis;    
 max-width: 530px;
+min-width: 0;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -125,6 +141,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 8px;
 padding: 0;
+min-width: 0;
 }
 
 .categoryItem {
@@ -205,4 +222,93 @@ margin-top: 40px;
 
 .loadMoreBtn:hover {
 border: 1px solid #D84343;
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .listItem {
+    flex-direction: column;
+    gap: 16px;
+  }
+ 
+  .img {
+    width: 100% !important;
+    height: 260px !important;
+  }
+ 
+  .description {
+    white-space: normal;
+    max-width: 100%;
+    margin-right: 0;
+  }
+ 
+  .name {
+    font-size: 20px;
+  }
+ 
+  .textPrice {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    width: 100%;
+  }
+ 
+  .listItem {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .img {
+    width: 100% !important;
+    height: 220px !important;
+  }
+ 
+  .name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+ 
+  .textPrice {
+    font-size: 18px;
+    line-height: 26px;
+  }
+ 
+  .description {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+ 
+  .categoryList {
+    gap: 6px;
+  }
+ 
+  .categoryItem {
+    height: 40px;
+  }
+ 
+  .itemText {
+    font-size: 14px;
+  }
+ 
+  .button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+ 
+  .loadMoreBtn {
+    width: 100%;
+    max-width: 200px;
+  }
 }

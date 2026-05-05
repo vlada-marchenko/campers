@@ -5,6 +5,8 @@
 display: flex;
 flex-direction: column;
 align-items: center;
+width: 100%;
+min-width: 0;
 }
 
 .CampersList_list__mA4f3 {
@@ -15,6 +17,8 @@ padding: 0px;
 gap: 32px;
 list-style: none;
 margin: 0;
+width: 100%;
+min-width: 0;
 }
 
 .CampersList_listItem___xcme {
@@ -28,8 +32,14 @@ background: #FFFFFF;
 border: 1px solid #DADDE1;
 border-radius: 20px;
 width: 100%;
+min-width: 0;
+overflow: hidden;
 }
 
+.CampersList_listItem___xcme > div {
+  min-width: 0;
+  flex: 1 1;
+}
 
 .CampersList_categoryList__YLLut > li:nth-child(n+8) {
   display: none;
@@ -51,6 +61,7 @@ justify-content: space-between;
 height: -moz-fit-content;
 height: fit-content;
 margin-bottom: 8px;
+min-width: 0;
 }
 
 .CampersList_name__o1Bfv {
@@ -61,6 +72,10 @@ font-size: 24px;
 line-height: 32px;
 color: #101828;
 margin: 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+min-width: 0;
 }
 
 .CampersList_price__KAfDv {
@@ -112,6 +127,7 @@ white-space: nowrap;
 overflow: hidden;         
 text-overflow: ellipsis;    
 max-width: 530px;
+min-width: 0;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -129,6 +145,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 8px;
 padding: 0;
+min-width: 0;
 }
 
 .CampersList_categoryItem__O9Z4A {
@@ -211,6 +228,95 @@ margin-top: 40px;
 .CampersList_loadMoreBtn__0l70R:hover {
 border: 1px solid #D84343;
 }
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .CampersList_listItem___xcme {
+    flex-direction: column;
+    gap: 16px;
+  }
+ 
+  .CampersList_img__y0PF8 {
+    width: 100% !important;
+    height: 260px !important;
+  }
+ 
+  .CampersList_description__1R4cK {
+    white-space: normal;
+    max-width: 100%;
+    margin-right: 0;
+  }
+ 
+  .CampersList_name__o1Bfv {
+    font-size: 20px;
+  }
+ 
+  .CampersList_textPrice__UkqJO {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CampersList_list__mA4f3 {
+    width: 100%;
+  }
+ 
+  .CampersList_listItem___xcme {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .CampersList_img__y0PF8 {
+    width: 100% !important;
+    height: 220px !important;
+  }
+ 
+  .CampersList_name__o1Bfv {
+    font-size: 18px;
+    line-height: 26px;
+  }
+ 
+  .CampersList_textPrice__UkqJO {
+    font-size: 18px;
+    line-height: 26px;
+  }
+ 
+  .CampersList_description__1R4cK {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+ 
+  .CampersList_categoryList__YLLut {
+    gap: 6px;
+  }
+ 
+  .CampersList_categoryItem__O9Z4A {
+    height: 40px;
+  }
+ 
+  .CampersList_itemText__mA441 {
+    font-size: 14px;
+  }
+ 
+  .CampersList_button__GWCFt {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+ 
+  .CampersList_loadMoreBtn__0l70R {
+    width: 100%;
+    max-width: 200px;
+  }
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./app/catalog/Page.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -236,6 +342,16 @@ border: 1px solid #D84343;
 .Page_filtersOverlay__rLaox { display: none; }
 .Page_backdrop__xNrCW { display: none; }
 .Page_close__WjCZS { display: none; }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .Page_container__tj5qz {
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -490,37 +606,46 @@ color: #FFFFFF;
 background: #D84343;
 }
 
-/* @media (max-width: 768px) {
-.container {
-  display: none;
+@media (max-width: 1024px) and (min-width: 769px) {
+  .Filters_container__C8v4l {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .Filters_input__KLVxa {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .Filters_divider__twb2V {
+    width: 100%;
+  }
 }
-} */
 
 @media (max-width: 768px) {
-.Filters_container__C8v4l {
-width: 330px;
-}
-
-.Filters_input__KLVxa {
-width: 300px;
-padding-right: 0;
-}
-
-.Filters_categoryList__dZsFI,
-.Filters_vehicleList___TjUu {
-  display: grid;
-  grid-gap: 7px;
-  gap: 7px;
-  padding: 0;
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 32px;
-}
-}
-
-.Filters_divider__twb2V {
-  width: 330px;
-  height: 0px;
-  border: 1px solid #DADDE1;
-  margin: 0;
+  .Filters_container__C8v4l {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .Filters_input__KLVxa {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 12px;
+  }
+ 
+  .Filters_divider__twb2V {
+    width: 100%;
+  }
+ 
+  .Filters_categoryList__dZsFI,
+  .Filters_vehicleList___TjUu {
+    display: grid;
+    grid-gap: 7px;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 }

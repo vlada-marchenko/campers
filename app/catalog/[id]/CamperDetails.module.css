@@ -130,3 +130,96 @@ margin-top: 60px;
   background: #E5E7EB;     
   margin: 0;
 }
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+  }
+ 
+  .imgContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+ 
+  .img {
+    width: 100% !important;
+    height: 220px !important;
+  }
+ 
+  .cardContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+ 
+  .name {
+    font-size: 20px;
+    line-height: 28px;
+  }
+ 
+  .textPrice {
+    font-size: 20px;
+    line-height: 28px;
+  }
+ 
+  .info {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+ 
+  .imgContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+ 
+  .img {
+    flex-shrink: 0;
+    width: 280px !important;
+    height: 220px !important;
+    scroll-snap-align: start;
+  }
+ 
+  .description {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+ 
+  .containerInfo {
+    margin-top: 32px;
+  }
+ 
+  .btnGroup {
+    gap: 20px;
+  }
+ 
+  .btnActive,
+  .btnInactive {
+    font-size: 16px;
+  }
+ 
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 32px;
+    margin-top: 24px;
+  }
+}

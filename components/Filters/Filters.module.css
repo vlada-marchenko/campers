@@ -165,36 +165,45 @@ color: #FFFFFF;
 background: #D84343;
 }
 
-/* @media (max-width: 768px) {
-.container {
-  display: none;
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .divider {
+    width: 100%;
+  }
 }
-} */
 
 @media (max-width: 768px) {
-.container {
-width: 330px;
-}
-
-.input {
-width: 300px;
-padding-right: 0;
-}
-
-.categoryList,
-.vehicleList {
-  display: grid;
-  gap: 7px;
-  padding: 0;
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 32px;
-}
-}
-
-.divider {
-  width: 330px;
-  height: 0px;
-  border: 1px solid #DADDE1;
-  margin: 0;
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 12px;
+  }
+ 
+  .divider {
+    width: 100%;
+  }
+ 
+  .categoryList,
+  .vehicleList {
+    display: grid;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 }

@@ -20,6 +20,16 @@
 .backdrop { display: none; }
 .close { display: none; }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .container {
