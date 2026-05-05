@@ -286,36 +286,127 @@ color: #D84343;
 display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px) {
 .Header_header__pXml_ {
-justify-content: space-between;
+  padding: 24px 48px;
+}
+ 
+.Header_nav_list___bvMn {
+  gap: 24px;
+}
+ 
+.Header_text__CwvQy {
+  font-size: 15px;
+}
 }
 
+@media (max-width: 768px) and (min-width: 481px) {
+.Header_header__pXml_ {
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+ 
 .Header_menu__5kOCu {
-display: block;
-border: transparent;
-background-color: transparent;
+  display: block;
+  border: transparent;
+  background-color: transparent;
 }
-
+ 
 .Header_nav__qviEC {
-display: none;
+  display: none;
 }
-
+ 
 .Header_nav_mob__AaKJv {
   display: flex;
 }
-
+ 
  .Header_overlay___7vt6 {
     position: absolute;            
     top: 110%;                      
-    right: 50px;                   
+    right: 40px;                   
     width: auto;                   
     background: transparent;      
     display: flex;
     justify-content: flex-end;
     z-index: 99;
   }
+ 
+  .Header_mob_menu__OM5gO {
+    width: 160px;                   
+    height: 220px;                  
+    padding: 20px 24px;             
+    border-radius: 12px;
+    background-color:#F2F4F7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: Header_fadeIn__nKDi7 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px #978256;
+  }
+ 
+  .Header_navMob__xOs2P {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+ 
+  .Header_text_mob__DnrIw {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    margin: 0;
+    text-decoration: none;
+  }
+ 
+  .Header_nav_list_mob__OziyN {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
+@media (max-width: 480px) and (min-width: 376px) {
+.Header_header__pXml_ {
+  justify-content: space-between;
+  padding: 22px 32px;
+}
+ 
+.Header_menu__5kOCu {
+  display: block;
+  border: transparent;
+  background-color: transparent;
+}
+ 
+.Header_nav__qviEC {
+  display: none;
+}
+ 
+.Header_nav_mob__AaKJv {
+  display: flex;
+}
+ 
+ .Header_overlay___7vt6 {
+    position: absolute;            
+    top: 110%;                      
+    right: 32px;                   
+    width: auto;                   
+    background: transparent;      
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+  }
+ 
   .Header_mob_menu__OM5gO {
     width: 140px;                   
     height: 200px;                  
@@ -331,14 +422,90 @@ display: none;
     gap: 20px;
     border: 2px #978256;
   }
-
+ 
   .Header_navMob__xOs2P {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
   }
+ 
+  .Header_text_mob__DnrIw {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    margin: 0;
+    text-decoration: none;
+  }
+ 
+  .Header_nav_list_mob__OziyN {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
+@media (max-width: 375px) {
+.Header_header__pXml_ {
+  padding: 20px 24px;
+  justify-content: space-between;
+}
+ 
+.Header_menu__5kOCu {
+display: block;
+border: transparent;
+background-color: transparent;
+}
+ 
+.Header_nav__qviEC {
+display: none;
+}
+ 
+.Header_nav_mob__AaKJv {
+  display: flex;
+}
+ 
+ .Header_overlay___7vt6 {
+    position: absolute;            
+    top: 110%;                      
+    right: 24px;                   
+    width: auto;                   
+    background: transparent;      
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+  }
+ 
+  .Header_mob_menu__OM5gO {
+    width: 140px;                   
+    height: 200px;                  
+    padding: 16px 20px;             
+    border-radius: 12px;
+    background-color:#F2F4F7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: Header_fadeIn__nKDi7 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px #978256;
+  }
+ 
+  .Header_navMob__xOs2P {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+ 
   .Header_text_mob__DnrIw {
 font-family: 'Inter';
 font-style: normal;
@@ -349,7 +516,7 @@ color: #101828;
 margin: 0;
 text-decoration: none;
   }
-
+ 
   .Header_nav_list_mob__OziyN {
     padding: 0;
     list-style: none;
@@ -359,14 +526,10 @@ text-decoration: none;
     justify-content: center;
     gap: 25px;
   }
-
+ 
 }
 
-@media (max-width: 375px) {
-.Header_header__pXml_ {
-  padding: 28px 32px;
-}
-}
+
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"weight":["400","500","600"],"display":"swap"}],"variableName":"inter"} ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

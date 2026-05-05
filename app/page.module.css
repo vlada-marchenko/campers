@@ -65,21 +65,92 @@ text-decoration: none;
 background: #D84343;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px) {
 .container {
-box-sizing: border-box;
-padding: 0 64px;
-overflow: hidden;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+ 
+.title {
+  font-size: 42px;
+  line-height: 48px;
+}
+ 
+.text {
+  font-size: 22px;
+  line-height: 30px;
+}
 }
 
+@media (max-width: 768px) and (min-width: 481px) {
+.container {
+  box-sizing: border-box;
+  padding: 0 40px;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+}
+ 
 .title {
-line-height: 50px;
+  font-size: 36px;
+  line-height: 44px;
+}
+ 
+.text {
+  font-size: 20px;
+  line-height: 28px;
+}
+ 
+.button {
+  margin-left: auto;
+  margin-right: auto;
 }
 }
+
+@media (max-width: 480px) and (min-width: 376px) {
+.container {
+  padding: 0 24px;
+  justify-content: center;
+  text-align: center;
+}
+ 
+.title {
+  font-size: 32px;
+  line-height: 40px;
+}
+ 
+.text {
+  font-size: 18px;
+  line-height: 26px;
+}
+ 
+.button {
+  margin-left: auto;
+  margin-right: auto;
+}
+} 
 
 @media (max-width: 375px) {
 .container {
-padding: 0 32px;
+  padding: 0 20px;
+  justify-content: center;
+  text-align: center;
+}
+ 
+.title {
+  font-size: 28px;
+  line-height: 36px;
+}
+ 
+.text {
+  font-size: 16px;
+  line-height: 24px;
+}
+ 
+.button {
+  width: 100%;
+  max-width: 173px;
+  margin-left: auto;
+  margin-right: auto;
 }
 }

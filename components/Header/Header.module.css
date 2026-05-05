@@ -52,36 +52,127 @@ color: #D84343;
 display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px) {
 .header {
-justify-content: space-between;
+  padding: 24px 48px;
+}
+ 
+.nav_list {
+  gap: 24px;
+}
+ 
+.text {
+  font-size: 15px;
+}
 }
 
+@media (max-width: 768px) and (min-width: 481px) {
+.header {
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+ 
 .menu {
-display: block;
-border: transparent;
-background-color: transparent;
+  display: block;
+  border: transparent;
+  background-color: transparent;
 }
-
+ 
 .nav {
-display: none;
+  display: none;
 }
-
+ 
 .nav_mob {
   display: flex;
 }
-
+ 
  .overlay {
     position: absolute;            
     top: 110%;                      
-    right: 50px;                   
+    right: 40px;                   
     width: auto;                   
     background: transparent;      
     display: flex;
     justify-content: flex-end;
     z-index: 99;
   }
+ 
+  .mob_menu {
+    width: 160px;                   
+    height: 220px;                  
+    padding: 20px 24px;             
+    border-radius: 12px;
+    background-color:#F2F4F7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: fadeIn 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px #978256;
+  }
+ 
+  .navMob {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+ 
+  .text_mob {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    margin: 0;
+    text-decoration: none;
+  }
+ 
+  .nav_list_mob {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
+@media (max-width: 480px) and (min-width: 376px) {
+.header {
+  justify-content: space-between;
+  padding: 22px 32px;
+}
+ 
+.menu {
+  display: block;
+  border: transparent;
+  background-color: transparent;
+}
+ 
+.nav {
+  display: none;
+}
+ 
+.nav_mob {
+  display: flex;
+}
+ 
+ .overlay {
+    position: absolute;            
+    top: 110%;                      
+    right: 32px;                   
+    width: auto;                   
+    background: transparent;      
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+  }
+ 
   .mob_menu {
     width: 140px;                   
     height: 200px;                  
@@ -97,14 +188,90 @@ display: none;
     gap: 20px;
     border: 2px #978256;
   }
-
+ 
   .navMob {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
   }
+ 
+  .text_mob {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    margin: 0;
+    text-decoration: none;
+  }
+ 
+  .nav_list_mob {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
+@media (max-width: 375px) {
+.header {
+  padding: 20px 24px;
+  justify-content: space-between;
+}
+ 
+.menu {
+display: block;
+border: transparent;
+background-color: transparent;
+}
+ 
+.nav {
+display: none;
+}
+ 
+.nav_mob {
+  display: flex;
+}
+ 
+ .overlay {
+    position: absolute;            
+    top: 110%;                      
+    right: 24px;                   
+    width: auto;                   
+    background: transparent;      
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+  }
+ 
+  .mob_menu {
+    width: 140px;                   
+    height: 200px;                  
+    padding: 16px 20px;             
+    border-radius: 12px;
+    background-color:#F2F4F7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: fadeIn 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px #978256;
+  }
+ 
+  .navMob {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+ 
   .text_mob {
 font-family: 'Inter';
 font-style: normal;
@@ -115,7 +282,7 @@ color: #101828;
 margin: 0;
 text-decoration: none;
   }
-
+ 
   .nav_list_mob {
     padding: 0;
     list-style: none;
@@ -125,11 +292,6 @@ text-decoration: none;
     justify-content: center;
     gap: 25px;
   }
-
+ 
 }
 
-@media (max-width: 375px) {
-.header {
-  padding: 28px 32px;
-}
-}
